@@ -9,15 +9,15 @@ import lombok.NoArgsConstructor;
 import lombok.ToString;
 
 @Data
-@AllArgsConstructor
-@NoArgsConstructor
 @ToString
 public class Cabecero {
 	
+	
 	@SerializedName("FCID_TRANSACCION")
-	private String fcidTransaccion;
+	private String fcIdTransaccion;
 	@SerializedName("FCIDFLUJO")
 	private String fcIdFlujo;
+	
 	@SerializedName("FIFECHAOPERACION")
 	private String fiFechaOperacion;
 	@SerializedName("FCINSTITUCION")
@@ -43,9 +43,8 @@ public class Cabecero {
 	@SerializedName("FCCONCEPTOPAGO")
 	private String fcConceptoPago; 
 	
-	
-	private String keyKafka;
 	private Integer partitionKafka;
+	private Integer fkIdConciliacion;
 
 
 }

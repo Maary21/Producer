@@ -54,10 +54,11 @@ public class ControllerProducer {
 			produces = MediaType.APPLICATION_JSON_VALUE)
 	//public Boolean
 	public RequestSendKafka save(@RequestBody  RequestSendKafka requestSendKafka) {
-		//log.info("save");
+		log.info("save");
 		//parametria = MsKafkaProducerApplication.parametria;
 		
 		return this.producer.sendMessage(requestSendKafka);
+		
 		//return new Cabecero();
 	}
 
